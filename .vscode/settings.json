@@ -1,0 +1,4 @@
+{
+  "cSpell.words": ["commitlint"],
+  "typescript.preferences.importModuleSpecifier": "relative"
+}
