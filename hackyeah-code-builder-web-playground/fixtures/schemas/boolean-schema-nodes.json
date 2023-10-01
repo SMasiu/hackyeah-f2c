@@ -1,0 +1,114 @@
+[
+  {
+    "id": "boolean:variable:declaration",
+    "type": "functionalityNode",
+    "title": "Variable",
+    "ref": {
+      "title": "Boolean"
+    },
+    "controls": [
+      {
+        "type": "booleanControl",
+        "sourceId": "value",
+        "label": "Value"
+      }
+    ]
+  },
+  {
+    "id": "boolean:comparator:equal",
+    "type": "functionalityNode",
+    "title": "Equals",
+    "ref": {
+      "title": "Boolean"
+    },
+    "controls": [
+      {
+        "type": "outputExpressionControl",
+        "sourceId": "result",
+        "label": "Result"
+      },
+      {
+        "type": "booleanControl",
+        "targetId": "value.0",
+        "label": "Value"
+      },
+      {
+        "type": "booleanControl",
+        "targetId": "value.1",
+        "label": "Value"
+      },
+      {
+        "type": "arrayNewItemControl",
+        "incrementTargetId": true
+      }
+    ]
+  },
+  {
+    "id": "boolean:comparator:not-equal",
+    "type": "functionalityNode",
+    "title": "Not Equals",
+    "ref": {
+      "title": "Boolean"
+    },
+    "controls": [
+      {
+        "type": "outputExpressionControl",
+        "sourceId": "result",
+        "label": "Result"
+      },
+      {
+        "type": "booleanControl",
+        "targetId": "value.0",
+        "label": "Value"
+      },
+      {
+        "type": "booleanControl",
+        "targetId": "value.1",
+        "label": "Value"
+      },
+      {
+        "type": "arrayNewItemControl",
+        "incrementTargetId": true
+      }
+    ]
+  },
+  {
+    "id": "boolean:operator:negate",
+    "type": "functionalityNode",
+    "title": "Negate",
+    "ref": {
+      "title": "Boolean"
+    },
+    "controls": [
+      {
+        "type": "expressionToExpressionControl",
+        "sourceId": "result",
+        "sourceLabel": "Result",
+        "targetId": "value",
+        "targetLabel": "Value"
+      }
+    ]
+  },
+  {
+    "id": "boolean:variable:set",
+    "type": "functionalityNode",
+    "title": "Set variable",
+    "sourceFlow": true,
+    "targetFlow": true,
+    "ref": {
+      "title": "Boolean"
+    },
+    "controls": [
+      {
+        "type": "inputExpressionControl",
+        "label": "Variable",
+        "targetId": "variable"
+      },
+      {
+        "type": "booleanControl",
+        "targetId": "value",
+        "label": "New value"
+      }
+    ]
+  }
+]

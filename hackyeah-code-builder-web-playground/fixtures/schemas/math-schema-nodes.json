@@ -1,0 +1,256 @@
+[
+  {
+    "id": "math:operation:add",
+    "type": "functionalityNode",
+    "title": "Add",
+    "ref": {
+      "title": "Math"
+    },
+    "controls": [
+      {
+        "type": "outputExpressionControl",
+        "sourceId": "result",
+        "label": "Result"
+      },
+      {
+        "type": "numberControl",
+        "targetId": "value.0",
+        "label": "Value"
+      },
+      {
+        "type": "numberControl",
+        "targetId": "value.1",
+        "label": "Value"
+      },
+      {
+        "type": "arrayNewItemControl",
+        "incrementTargetId": true
+      }
+    ]
+  },
+  {
+    "id": "math:operation:subtract",
+    "type": "functionalityNode",
+    "title": "Subtract",
+    "ref": {
+      "title": "Math"
+    },
+    "controls": [
+      {
+        "type": "outputExpressionControl",
+        "sourceId": "result",
+        "label": "Result"
+      },
+      {
+        "type": "numberControl",
+        "targetId": "value.0",
+        "label": "Value"
+      },
+      {
+        "type": "numberControl",
+        "targetId": "value.1",
+        "label": "Value"
+      },
+      {
+        "type": "arrayNewItemControl",
+        "incrementTargetId": true
+      }
+    ]
+  },
+  {
+    "id": "math:operation:multiply",
+    "type": "functionalityNode",
+    "title": "Multiply",
+    "ref": {
+      "title": "Math"
+    },
+    "controls": [
+      {
+        "type": "outputExpressionControl",
+        "sourceId": "result",
+        "label": "Result"
+      },
+      {
+        "type": "numberControl",
+        "targetId": "value.0",
+        "label": "Value"
+      },
+      {
+        "type": "numberControl",
+        "targetId": "value.1",
+        "label": "Value"
+      },
+      {
+        "type": "arrayNewItemControl",
+        "incrementTargetId": true
+      }
+    ]
+  },
+  {
+    "id": "math:operation:divide",
+    "type": "functionalityNode",
+    "title": "Divide",
+    "ref": {
+      "title": "Math"
+    },
+    "controls": [
+      {
+        "type": "outputExpressionControl",
+        "sourceId": "result",
+        "label": "Result"
+      },
+      {
+        "type": "numberControl",
+        "targetId": "value.0",
+        "label": "Value"
+      },
+      {
+        "type": "numberControl",
+        "targetId": "value.1",
+        "label": "Value"
+      },
+      {
+        "type": "arrayNewItemControl",
+        "incrementTargetId": true
+      }
+    ]
+  },
+  {
+    "id": "math:operation:power",
+    "type": "functionalityNode",
+    "title": "Power",
+    "ref": {
+      "title": "Math"
+    },
+    "controls": [
+      {
+        "type": "outputExpressionControl",
+        "sourceId": "result",
+        "label": "Result"
+      },
+      {
+        "type": "numberControl",
+        "targetId": "value.0",
+        "label": "Value"
+      },
+      {
+        "type": "numberControl",
+        "targetId": "value.1",
+        "label": "Value"
+      }
+    ]
+  },
+  {
+    "id": "math:operation:sqrt",
+    "type": "functionalityNode",
+    "title": "Sqrt",
+    "ref": {
+      "title": "Math"
+    },
+    "controls": [
+      {
+        "type": "outputExpressionControl",
+        "sourceId": "result",
+        "label": "Result"
+      },
+      {
+        "type": "numberControl",
+        "targetId": "value.0",
+        "label": "Value"
+      },
+      {
+        "type": "numberControl",
+        "targetId": "value.1",
+        "label": "Value"
+      }
+    ]
+  },
+  {
+    "id": "math:operation:modulo",
+    "type": "functionalityNode",
+    "title": "Modulo",
+    "ref": {
+      "title": "Math"
+    },
+    "controls": [
+      {
+        "type": "outputExpressionControl",
+        "sourceId": "result",
+        "label": "Result"
+      },
+      {
+        "type": "numberControl",
+        "targetId": "value.0",
+        "label": "Value"
+      },
+      {
+        "type": "numberControl",
+        "targetId": "value.1",
+        "label": "Value"
+      }
+    ]
+  },
+  {
+    "id": "math:precision:round",
+    "type": "functionalityNode",
+    "title": "Round",
+    "ref": {
+      "title": "Math"
+    },
+    "controls": [
+      {
+        "type": "numberControl",
+        "targetId": "value",
+        "sourceId": "result",
+        "label": "Value"
+      },
+      {
+        "type": "numberControl",
+        "targetId": "value",
+        "label": "Precision"
+      }
+    ]
+  },
+  {
+    "id": "math:precision:ceil",
+    "type": "functionalityNode",
+    "title": "Ceil",
+    "ref": {
+      "title": "Math"
+    },
+    "controls": [
+      {
+        "type": "numberControl",
+        "targetId": "value",
+        "sourceId": "result",
+        "label": "Value"
+      },
+      {
+        "type": "numberControl",
+        "targetId": "value",
+        "label": "Precision"
+      }
+    ]
+  },
+  {
+    "id": "math:precision:floor",
+    "type": "functionalityNode",
+    "title": "Floor",
+    "ref": {
+      "title": "Math"
+    },
+    "controls": [
+      {
+        "type": "numberControl",
+        "targetId": "value",
+        "sourceId": "result",
+        "label": "Value"
+      },
+      {
+        "type": "numberControl",
+        "targetId": "value",
+        "label": "Precision"
+      }
+    ]
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "id": "4bb556cf-d031-4de7-9a67-5db162833b3f",
+  "name": "Log number",
+  "type": "FLOW",
+  "nodes": [
+    {
+      "id": "23b258f6-c7ef-4087-812c-4fa2adccf116",
+      "nodeSchemaId": "flow:input:ref",
+      "position": { "x": 0, "y": 0 }
+    },
+    {
+      "id": "1da910bf-2b9a-4450-9081-39963d0ed676",
+      "nodeSchemaId": "logger:message:info",
+      "position": { "x": 400, "y": 0 }
+    },
+    {
+      "id": "8c02d8bf-add6-4de1-808b-adc70e6a89a7",
+      "nodeSchemaId": "number:variable:declaration",
+      "position": { "x": 100, "y": 100 }
+    },
+    {
+      "id": "35aa943d-5aaa-44c6-9799-b28dc402dae1",
+      "nodeSchemaId": "flow:output:success",
+      "position": { "x": 700, "y": 0 }
+    }
+  ],
+  "edges": [
+    {
+      "id": "0a8f5640-e7f2-4aea-96f3-d869013065ed",
+      "source": "23b258f6-c7ef-4087-812c-4fa2adccf116",
+      "sourceHandle": "flow",
+      "target": "1da910bf-2b9a-4450-9081-39963d0ed676",
+      "targetHandle": "flow"
+    },
+    {
+      "id": "c0078fc4-9ab8-4667-81de-022c76f6b1ee",
+      "source": "1da910bf-2b9a-4450-9081-39963d0ed676",
+      "sourceHandle": "flow",
+      "target": "35aa943d-5aaa-44c6-9799-b28dc402dae1",
+      "targetHandle": "flow"
+    },
+    {
+      "id": "e60e7acf-bb24-4517-8f2a-b567cd1ace17",
+      "source": "8c02d8bf-add6-4de1-808b-adc70e6a89a7",
+      "sourceHandle": "value",
+      "target": "1da910bf-2b9a-4450-9081-39963d0ed676",
+      "targetHandle": "message"
+    }
+  ]
+}

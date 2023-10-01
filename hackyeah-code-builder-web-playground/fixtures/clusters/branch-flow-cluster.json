@@ -1,0 +1,86 @@
+{
+  "id": "41b36c1b-b0a5-4f96-b727-b6e09e29ecca",
+  "name": "Log number",
+  "type": "FLOW",
+  "nodes": [
+    {
+      "id": "23b258f6-c7ef-4087-812c-4fa2adccf116",
+      "nodeSchemaId": "flow:input:ref",
+      "position": { "x": 0, "y": 0 }
+    },
+    {
+      "id": "1da910bf-2b9a-4450-9081-39963d0ed676",
+      "nodeSchemaId": "logger:message:info",
+      "position": { "x": 400, "y": 0 }
+    },
+    {
+      "id": "e8072211-3fd9-4be6-805d-320bac742cf7",
+      "nodeSchemaId": "flow:condition:expression-to-flow",
+      "position": { "x": 800, "y": 0 }
+    },
+    {
+      "id": "7bd4027f-ccd5-4bf3-97f5-acfaf7c78b55",
+      "nodeSchemaId": "logger:message:info",
+      "position": { "x": 1200, "y": 200 }
+    },
+    {
+      "id": "c002897a-c0ca-4eb6-a248-3f0c244c2aad",
+      "nodeSchemaId": "logger:message:info",
+      "position": { "x": 1200, "y": 400 }
+    },
+    {
+      "id": "f1ae7908-98cd-4046-b219-cd9fe1f876ef",
+      "nodeSchemaId": "logger:message:info",
+      "position": { "x": 1600, "y": 0 }
+    },
+    {
+      "id": "35aa943d-5aaa-44c6-9799-b28dc402dae1",
+      "nodeSchemaId": "flow:output:success",
+      "position": { "x": 2000, "y": 0 }
+    }
+  ],
+  "edges": [
+    {
+      "source": "23b258f6-c7ef-4087-812c-4fa2adccf116",
+      "sourceHandle": "flow",
+      "target": "1da910bf-2b9a-4450-9081-39963d0ed676",
+      "targetHandle": "flow",
+      "id": "reactflow__edge-23b258f6-c7ef-4087-812c-4fa2adccf116flow-1da910bf-2b9a-4450-9081-39963d0ed676flow"
+    },
+    {
+      "source": "1da910bf-2b9a-4450-9081-39963d0ed676",
+      "sourceHandle": "flow",
+      "target": "e8072211-3fd9-4be6-805d-320bac742cf7",
+      "targetHandle": "flow",
+      "id": "reactflow__edge-1da910bf-2b9a-4450-9081-39963d0ed676flow-e8072211-3fd9-4be6-805d-320bac742cf7flow"
+    },
+    {
+      "source": "e8072211-3fd9-4be6-805d-320bac742cf7",
+      "sourceHandle": "flow",
+      "target": "f1ae7908-98cd-4046-b219-cd9fe1f876ef",
+      "targetHandle": "flow",
+      "id": "reactflow__edge-e8072211-3fd9-4be6-805d-320bac742cf7flow-f1ae7908-98cd-4046-b219-cd9fe1f876efflow"
+    },
+    {
+      "source": "f1ae7908-98cd-4046-b219-cd9fe1f876ef",
+      "sourceHandle": "flow",
+      "target": "35aa943d-5aaa-44c6-9799-b28dc402dae1",
+      "targetHandle": "flow",
+      "id": "reactflow__edge-f1ae7908-98cd-4046-b219-cd9fe1f876efflow-35aa943d-5aaa-44c6-9799-b28dc402dae1flow"
+    },
+    {
+      "source": "e8072211-3fd9-4be6-805d-320bac742cf7",
+      "sourceHandle": "true.0",
+      "target": "7bd4027f-ccd5-4bf3-97f5-acfaf7c78b55",
+      "targetHandle": "flow",
+      "id": "reactflow__edge-e8072211-3fd9-4be6-805d-320bac742cf7true.0-7bd4027f-ccd5-4bf3-97f5-acfaf7c78b55flow"
+    },
+    {
+      "source": "e8072211-3fd9-4be6-805d-320bac742cf7",
+      "sourceHandle": "false",
+      "target": "c002897a-c0ca-4eb6-a248-3f0c244c2aad",
+      "targetHandle": "flow",
+      "id": "reactflow__edge-e8072211-3fd9-4be6-805d-320bac742cf7false-c002897a-c0ca-4eb6-a248-3f0c244c2aadflow"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+[
+  {
+    "id": "json:cast:stringify",
+    "type": "functionalityNode",
+    "title": "Stringify",
+    "ref": {
+      "title": "JSON"
+    },
+    "controls": [
+      {
+        "type": "expressionToExpressionControl",
+        "targetId": "value",
+        "targetLabel": "Value",
+        "sourceId": "result",
+        "sourceLabel": "Result"
+      }
+    ]
+  },
+  {
+    "id": "json:cast:parse",
+    "type": "functionalityNode",
+    "title": "Parse",
+    "ref": {
+      "title": "JSON"
+    },
+    "controls": [
+      {
+        "type": "expressionToExpressionControl",
+        "targetId": "value",
+        "targetLabel": "Value",
+        "sourceId": "result",
+        "sourceLabel": "Result"
+      }
+    ]
+  }
+]

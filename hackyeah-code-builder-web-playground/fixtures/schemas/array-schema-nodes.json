@@ -1,0 +1,140 @@
+[
+  {
+    "id": "array:variable:declaration",
+    "type": "functionalityNode",
+    "title": "Variable",
+    "ref": {
+      "title": "Array"
+    },
+    "controls": [
+      {
+        "type": "outputExpressionControl",
+        "sourceId": "value",
+        "label": "Value"
+      },
+      {
+        "type": "inputExpressionControl",
+        "targetId": "item.0",
+        "label": "Item"
+      },
+      {
+        "type": "arrayNewItemControl",
+        "incrementTargetId": true
+      }
+    ]
+  },
+  {
+    "id": "array:update:append",
+    "type": "functionalityNode",
+    "title": "Append",
+    "ref": {
+      "title": "Array"
+    },
+    "sourceFlow": true,
+    "targetFlow": true,
+    "controls": [
+      {
+        "type": "inputExpressionControl",
+        "targetId": "array",
+        "label": "Array"
+      },
+      {
+        "type": "inputExpressionControl",
+        "targetId": "item.0",
+        "label": "Item"
+      },
+      {
+        "type": "arrayNewItemControl",
+        "incrementTargetId": true
+      }
+    ]
+  },
+  {
+    "id": "array:update:filter",
+    "type": "functionalityNode",
+    "title": "Filter",
+    "ref": {
+      "title": "Array"
+    },
+    "sourceFlow": true,
+    "targetFlow": true,
+    "controls": [
+      {
+        "type": "inputExpressionControl",
+        "sourceId": "value",
+        "label": "Value"
+      },
+      {
+        "type": "inputExpressionControl",
+        "targetId": "filter",
+        "label": "Filter cluster"
+      }
+    ]
+  },
+  {
+    "id": "array:update:map",
+    "type": "functionalityNode",
+    "title": "Map",
+    "ref": {
+      "title": "Array"
+    },
+    "sourceFlow": true,
+    "targetFlow": true,
+    "controls": [
+      {
+        "type": "inputExpressionControl",
+        "sourceId": "value",
+        "label": "Value"
+      },
+      {
+        "type": "inputExpressionControl",
+        "targetId": "filter",
+        "label": "Mapper cluster"
+      }
+    ]
+  },
+  {
+    "id": "array:update:filtered",
+    "type": "functionalityNode",
+    "title": "Filtered",
+    "ref": {
+      "title": "Array"
+    },
+    "controls": [
+      {
+        "type": "expressionToExpressionControl",
+        "sourceId": "value",
+        "sourceLabel": "Value",
+        "targetId": "array",
+        "targetLabel": "Array"
+      },
+      {
+        "type": "inputExpressionControl",
+        "targetId": "filter",
+        "label": "Filter cluster"
+      }
+    ]
+  },
+  {
+    "id": "array:update:mapped",
+    "type": "functionalityNode",
+    "title": "Mapped",
+    "ref": {
+      "title": "Array"
+    },
+    "controls": [
+      {
+        "type": "expressionToExpressionControl",
+        "sourceId": "value",
+        "sourceLabel": "Value",
+        "targetId": "array",
+        "targetLabel": "Array"
+      },
+      {
+        "type": "inputExpressionControl",
+        "targetId": "mapper",
+        "label": "Mapper cluster"
+      }
+    ]
+  }
+]

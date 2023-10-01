@@ -1,0 +1,17 @@
+[
+  {
+    "id": "uuid:v4:generate",
+    "type": "functionalityNode",
+    "title": "Generate",
+    "ref": {
+      "title": "UUID"
+    },
+    "controls": [
+      {
+        "type": "outputExpressionControl",
+        "sourceId": "value",
+        "label": "Value"
+      }
+    ]
+  }
+]

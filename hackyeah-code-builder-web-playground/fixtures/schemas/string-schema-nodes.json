@@ -1,0 +1,230 @@
+[
+  {
+    "id": "string:variable:declaration",
+    "type": "functionalityNode",
+    "title": "Variable",
+    "ref": {
+      "title": "String"
+    },
+    "controls": [
+      {
+        "type": "textControl",
+        "sourceId": "value",
+        "label": "Value"
+      }
+    ]
+  },
+  {
+    "id": "string:comparator:equal",
+    "type": "functionalityNode",
+    "title": "Equals",
+    "ref": {
+      "title": "String"
+    },
+    "controls": [
+      {
+        "type": "outputExpressionControl",
+        "sourceId": "result",
+        "label": "Result"
+      },
+      {
+        "type": "textControl",
+        "targetId": "value.0",
+        "label": "Value"
+      },
+      {
+        "type": "textControl",
+        "targetId": "value.1",
+        "label": "Value"
+      },
+      {
+        "type": "arrayNewItemControl",
+        "incrementTargetId": true
+      }
+    ]
+  },
+  {
+    "id": "string:comparator:not-equal",
+    "type": "functionalityNode",
+    "title": "Not Equals",
+    "ref": {
+      "title": "String"
+    },
+    "controls": [
+      {
+        "type": "outputExpressionControl",
+        "sourceId": "result",
+        "label": "Result"
+      },
+      {
+        "type": "textControl",
+        "targetId": "value.0",
+        "label": "Value"
+      },
+      {
+        "type": "textControl",
+        "targetId": "value.1",
+        "label": "Value"
+      },
+      {
+        "type": "arrayNewItemControl",
+        "incrementTargetId": true
+      }
+    ]
+  },
+  {
+    "id": "string:comparator:lt",
+    "type": "functionalityNode",
+    "title": "Less than",
+    "ref": {
+      "title": "String"
+    },
+    "controls": [
+      {
+        "type": "outputExpressionControl",
+        "sourceId": "result",
+        "label": "Result"
+      },
+      {
+        "type": "textControl",
+        "targetId": "value.0",
+        "label": "Value"
+      },
+      {
+        "type": "textControl",
+        "targetId": "value.1",
+        "label": "Value"
+      },
+      {
+        "type": "arrayNewItemControl",
+        "incrementTargetId": true
+      }
+    ]
+  },
+  {
+    "id": "string:comparator:lte",
+    "type": "functionalityNode",
+    "title": "Less than or equal to",
+    "ref": {
+      "title": "String"
+    },
+    "controls": [
+      {
+        "type": "outputExpressionControl",
+        "sourceId": "result",
+        "label": "Result"
+      },
+      {
+        "type": "textControl",
+        "targetId": "value.0",
+        "label": "Value"
+      },
+      {
+        "type": "textControl",
+        "targetId": "value.1",
+        "label": "Value"
+      },
+      {
+        "type": "arrayNewItemControl",
+        "incrementTargetId": true
+      }
+    ]
+  },
+  {
+    "id": "string:comparator:gt",
+    "type": "functionalityNode",
+    "title": "Greater than",
+    "ref": {
+      "title": "String"
+    },
+    "controls": [
+      {
+        "type": "outputExpressionControl",
+        "sourceId": "result",
+        "label": "Result"
+      },
+      {
+        "type": "textControl",
+        "targetId": "value.0",
+        "label": "Value"
+      },
+      {
+        "type": "textControl",
+        "targetId": "value.1",
+        "label": "Value"
+      },
+      {
+        "type": "arrayNewItemControl",
+        "incrementTargetId": true
+      }
+    ]
+  },
+  {
+    "id": "string:comparator:gte",
+    "type": "functionalityNode",
+    "title": "Greater than or equal to",
+    "ref": {
+      "title": "String"
+    },
+    "controls": [
+      {
+        "type": "outputExpressionControl",
+        "sourceId": "result",
+        "label": "Result"
+      },
+      {
+        "type": "textControl",
+        "targetId": "value.0",
+        "label": "Value"
+      },
+      {
+        "type": "textControl",
+        "targetId": "value.1",
+        "label": "Value"
+      },
+      {
+        "type": "arrayNewItemControl",
+        "incrementTargetId": true
+      }
+    ]
+  },
+  {
+    "id": "string:variable:set",
+    "type": "functionalityNode",
+    "title": "Set variable",
+    "sourceFlow": true,
+    "targetFlow": true,
+    "ref": {
+      "title": "String"
+    },
+    "controls": [
+      {
+        "type": "inputExpressionControl",
+        "label": "Variable",
+        "targetId": "variable"
+      },
+      {
+        "type": "textControl",
+        "targetId": "value",
+        "label": "New value"
+      }
+    ]
+  },
+  {
+    "id": "string:transform:to-uppercase",
+    "type": "functionalityNode",
+    "title": "To uppercase",
+    "ref": {
+      "title": "String"
+    },
+    "controls": [
+      {
+        "type": "expressionToExpressionControl",
+        "targetId": "value",
+        "targetLabel": "Value",
+        "sourceId": "result",
+        "sourceLabel": "Result"
+      }
+    ]
+  }
+]

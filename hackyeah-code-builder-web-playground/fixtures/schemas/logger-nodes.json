@@ -1,0 +1,19 @@
+[
+  {
+    "id": "logger:message:info",
+    "type": "functionalityNode",
+    "title": "Info",
+    "targetFlow": true,
+    "sourceFlow": true,
+    "ref": {
+      "title": "Logger"
+    },
+    "controls": [
+      {
+        "type": "textControl",
+        "targetId": "message",
+        "label": "Message"
+      }
+    ]
+  }
+]

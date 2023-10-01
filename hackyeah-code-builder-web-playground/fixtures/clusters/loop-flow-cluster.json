@@ -1,0 +1,122 @@
+{
+  "id": "e7cc33b7-8a7c-418a-baa6-6ddf560538c8",
+  "name": "Log number",
+  "type": "FLOW",
+  "nodes": [
+    {
+      "id": "23b258f6-c7ef-4087-812c-4fa2adccf116",
+      "nodeSchemaId": "flow:input:ref",
+      "position": { "x": 0, "y": 0 }
+    },
+    {
+      "id": "e7d09608-930e-4275-876a-00e5895bbf18",
+      "nodeSchemaId": "flow:loop:range",
+      "position": { "x": 300, "y": 0 }
+    },
+    {
+      "id": "73b0b6c3-a869-4039-b69e-6c2f3f032523",
+      "nodeSchemaId": "logger:message:info",
+      "position": { "x": 600, "y": 100 }
+    },
+    {
+      "id": "9b67f517-4336-48e2-86a3-c0629760943a",
+      "nodeSchemaId": "flow:loop:while",
+      "position": { "x": 900, "y": 0 }
+    },
+    {
+      "id": "08ede0e9-a92f-4c2f-afaa-2f75a7d91f54",
+      "nodeSchemaId": "logger:message:info",
+      "position": { "x": 1200, "y": 100 }
+    },
+    {
+      "id": "7f98a404-24b1-4d80-82d4-0af8ddd0811b",
+      "nodeSchemaId": "flow:loop:do-while",
+      "position": { "x": 1500, "y": 0 }
+    },
+    {
+      "id": "208b5051-c50c-4f36-86f7-357178786274",
+      "nodeSchemaId": "logger:message:info",
+      "position": { "x": 1800, "y": 100 }
+    },
+    {
+      "id": "406f1117-b221-46b9-818d-9c662cc73081",
+      "nodeSchemaId": "flow:loop:infinite",
+      "position": { "x": 2100, "y": 0 }
+    },
+    {
+      "id": "2d60b27c-d37f-4d2d-b287-68a4e3816a2c",
+      "nodeSchemaId": "logger:message:info",
+      "position": { "x": 2400, "y": 100 }
+    },
+    {
+      "id": "35aa943d-5aaa-44c6-9799-b28dc402dae1",
+      "nodeSchemaId": "flow:output:success",
+      "position": { "x": 2700, "y": 0 }
+    }
+  ],
+  "edges": [
+    {
+      "source": "23b258f6-c7ef-4087-812c-4fa2adccf116",
+      "sourceHandle": "flow",
+      "target": "e7d09608-930e-4275-876a-00e5895bbf18",
+      "targetHandle": "flow",
+      "id": "reactflow__edge-23b258f6-c7ef-4087-812c-4fa2adccf116flow-e7d09608-930e-4275-876a-00e5895bbf18flow"
+    },
+    {
+      "source": "e7d09608-930e-4275-876a-00e5895bbf18",
+      "sourceHandle": "flow",
+      "target": "9b67f517-4336-48e2-86a3-c0629760943a",
+      "targetHandle": "flow",
+      "id": "reactflow__edge-e7d09608-930e-4275-876a-00e5895bbf18flow-9b67f517-4336-48e2-86a3-c0629760943aflow"
+    },
+    {
+      "source": "9b67f517-4336-48e2-86a3-c0629760943a",
+      "sourceHandle": "flow",
+      "target": "7f98a404-24b1-4d80-82d4-0af8ddd0811b",
+      "targetHandle": "flow",
+      "id": "reactflow__edge-9b67f517-4336-48e2-86a3-c0629760943aflow-7f98a404-24b1-4d80-82d4-0af8ddd0811bflow"
+    },
+    {
+      "source": "7f98a404-24b1-4d80-82d4-0af8ddd0811b",
+      "sourceHandle": "flow",
+      "target": "406f1117-b221-46b9-818d-9c662cc73081",
+      "targetHandle": "flow",
+      "id": "reactflow__edge-7f98a404-24b1-4d80-82d4-0af8ddd0811bflow-406f1117-b221-46b9-818d-9c662cc73081flow"
+    },
+    {
+      "source": "406f1117-b221-46b9-818d-9c662cc73081",
+      "sourceHandle": "flow",
+      "target": "35aa943d-5aaa-44c6-9799-b28dc402dae1",
+      "targetHandle": "flow",
+      "id": "reactflow__edge-406f1117-b221-46b9-818d-9c662cc73081flow-35aa943d-5aaa-44c6-9799-b28dc402dae1flow"
+    },
+    {
+      "source": "e7d09608-930e-4275-876a-00e5895bbf18",
+      "sourceHandle": "body",
+      "target": "73b0b6c3-a869-4039-b69e-6c2f3f032523",
+      "targetHandle": "flow",
+      "id": "reactflow__edge-e7d09608-930e-4275-876a-00e5895bbf18body-73b0b6c3-a869-4039-b69e-6c2f3f032523flow"
+    },
+    {
+      "source": "9b67f517-4336-48e2-86a3-c0629760943a",
+      "sourceHandle": "body",
+      "target": "08ede0e9-a92f-4c2f-afaa-2f75a7d91f54",
+      "targetHandle": "flow",
+      "id": "reactflow__edge-9b67f517-4336-48e2-86a3-c0629760943abody-08ede0e9-a92f-4c2f-afaa-2f75a7d91f54flow"
+    },
+    {
+      "source": "7f98a404-24b1-4d80-82d4-0af8ddd0811b",
+      "sourceHandle": "body",
+      "target": "208b5051-c50c-4f36-86f7-357178786274",
+      "targetHandle": "flow",
+      "id": "reactflow__edge-7f98a404-24b1-4d80-82d4-0af8ddd0811bbody-208b5051-c50c-4f36-86f7-357178786274flow"
+    },
+    {
+      "source": "406f1117-b221-46b9-818d-9c662cc73081",
+      "sourceHandle": "body",
+      "target": "2d60b27c-d37f-4d2d-b287-68a4e3816a2c",
+      "targetHandle": "flow",
+      "id": "reactflow__edge-406f1117-b221-46b9-818d-9c662cc73081body-2d60b27c-d37f-4d2d-b287-68a4e3816a2cflow"
+    }
+  ]
+}

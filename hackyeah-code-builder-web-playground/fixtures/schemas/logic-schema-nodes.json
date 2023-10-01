@@ -1,0 +1,48 @@
+[
+  {
+    "id": "logic:operator:and",
+    "type": "functionalityNode",
+    "title": "And",
+    "controls": [
+      {
+        "type": "expressionToExpressionControl",
+        "targetId": "value.0",
+        "targetLabel": "Value",
+        "sourceId": "result",
+        "sourceLabel": "Result"
+      },
+      {
+        "type": "inputExpressionControl",
+        "targetId": "value.1",
+        "label": "Value"
+      },
+      {
+        "type": "arrayNewItemControl",
+        "incrementTargetId": true
+      }
+    ]
+  },
+  {
+    "id": "logic:operator:or",
+    "type": "functionalityNode",
+    "title": "Or",
+    "controls": [
+      {
+        "type": "expressionToExpressionControl",
+        "targetId": "value.0",
+        "targetLabel": "Value",
+        "sourceId": "result",
+        "sourceLabel": "Result"
+      },
+      {
+        "type": "inputExpressionControl",
+        "targetId": "value.1",
+        "label": "Value"
+      },
+      {
+        "type": "arrayNewItemControl",
+        "incrementTargetId": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,228 @@
+[
+  {
+    "id": "flow:input:ref",
+    "type": "functionalityNode",
+    "title": "Input",
+    "sourceFlow": true
+  },
+  {
+    "id": "flow:output:success",
+    "type": "functionalityNode",
+    "title": "Output",
+    "targetFlow": true,
+    "controls": [
+      {
+        "type": "inputExpressionControl",
+        "targetId": "data",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "id": "flow:output:failure",
+    "type": "functionalityNode",
+    "title": "Error Output",
+    "targetFlow": true,
+    "controls": [
+      {
+        "type": "inputExpressionControl",
+        "targetId": "error",
+        "label": "Error"
+      }
+    ]
+  },
+  {
+    "id": "flow:condition:expression-to-flow",
+    "type": "functionalityNode",
+    "title": "Conditional flow",
+    "targetFlow": true,
+    "sourceFlow": true,
+    "controls": [
+      {
+        "type": "expressionToFlowControl",
+        "sourceId": "true.0",
+        "sourceLabel": "True",
+        "targetId": "expression.0",
+        "targetLabel": "Expression"
+      },
+      {
+        "type": "arrayNewItemControl",
+        "incrementTargetId": true,
+        "incrementSourceId": true
+      },
+      {
+        "type": "outputFlowControl",
+        "sourceId": "false",
+        "label": "False"
+      }
+    ]
+  },
+  {
+    "id": "flow:condition:expression-to-expression",
+    "type": "functionalityNode",
+    "title": "Conditional expression",
+    "controls": [
+      {
+        "type": "expressionToExpressionControl",
+        "sourceId": "result",
+        "sourceLabel": "Result",
+        "targetId": "expression",
+        "targetLabel": "Expression"
+      },
+      {
+        "type": "inputExpressionControl",
+        "targetId": "true",
+        "label": "True"
+      },
+      {
+        "type": "inputExpressionControl",
+        "targetId": "false",
+        "label": "False"
+      }
+    ]
+  },
+  {
+    "id": "flow:loop:range",
+    "type": "functionalityNode",
+    "title": "Range loop",
+    "sourceFlow": true,
+    "targetFlow": true,
+    "controls": [
+      {
+        "type": "outputFlowControl",
+        "sourceId": "body",
+        "label": "Body"
+      },
+      {
+        "type": "textControl",
+        "label": "Variable",
+        "targetId": "variable"
+      },
+      {
+        "type": "numberControl",
+        "targetId": "start",
+        "label": "Start"
+      },
+      {
+        "type": "numberControl",
+        "targetId": "end",
+        "label": "End"
+      },
+      {
+        "type": "numberControl",
+        "targetId": "step",
+        "label": "Step"
+      }
+    ]
+  },
+  {
+    "id": "flow:loop:while",
+    "type": "functionalityNode",
+    "title": "While loop",
+    "sourceFlow": true,
+    "targetFlow": true,
+    "controls": [
+      {
+        "type": "outputFlowControl",
+        "sourceId": "body",
+        "label": "Body"
+      },
+      {
+        "type": "inputExpressionControl",
+        "targetId": "expression",
+        "label": "Expression"
+      }
+    ]
+  },
+  {
+    "id": "flow:loop:do-while",
+    "type": "functionalityNode",
+    "title": "Do while loop",
+    "sourceFlow": true,
+    "targetFlow": true,
+    "controls": [
+      {
+        "type": "outputFlowControl",
+        "sourceId": "body",
+        "label": "Body"
+      },
+      {
+        "type": "inputExpressionControl",
+        "targetId": "expression",
+        "label": "Expression"
+      }
+    ]
+  },
+  {
+    "id": "flow:loop:infinite",
+    "type": "functionalityNode",
+    "title": "Infinite loop",
+    "sourceFlow": true,
+    "targetFlow": true,
+    "controls": [
+      {
+        "type": "outputFlowControl",
+        "sourceId": "body",
+        "label": "Body"
+      }
+    ]
+  },
+  {
+    "id": "flow:loop:iterator",
+    "type": "functionalityNode",
+    "title": "Iterator loop",
+    "sourceFlow": true,
+    "targetFlow": true,
+    "controls": [
+      {
+        "type": "outputFlowControl",
+        "sourceId": "body",
+        "label": "Body"
+      },
+      {
+        "type": "textControl",
+        "label": "Variable",
+        "targetId": "variable"
+      },
+      {
+        "type": "inputExpressionControl",
+        "targetId": "source",
+        "label": "Source"
+      }
+    ]
+  },
+  {
+    "id": "flow:loop:break",
+    "type": "functionalityNode",
+    "title": "Break loop",
+    "targetFlow": true,
+    "controls": [
+      {
+        "type": "textControl",
+        "label": "Loop"
+      }
+    ]
+  },
+  {
+    "id": "flow:loop:continue",
+    "type": "functionalityNode",
+    "title": "Skip loop iteration",
+    "targetFlow": true,
+    "controls": [
+      {
+        "type": "textControl",
+        "label": "Loop"
+      }
+    ]
+  },
+  {
+    "id": "flow:pipe:expression",
+    "type": "pipeNode",
+    "items": ["number:cast:to-string"]
+  },
+  {
+    "id": "flow:reference:variable",
+    "type": "referenceNode",
+    "title": "Reference"
+  }
+]
